@@ -1,42 +1,45 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List Assignment</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div>
+    <div class="container">
         <h2>TODO LIST</h2>
-        <h3>Add new task</h3>
+        <h3>Add Item</h3>
+        <div class="new-task-container">
+            <input id="new-task" type="text" />
+            <button id="add-button">Add</button>
+        </div>
 
-        <p>
-            <input type="text">
-            <button>Add</button>
-        </p>
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <li>
+                <p>Host live session with Stutern learners</p>
+                <button id="edit-button">Edit</button>
+                <button id="delete-button">Delete</button>
+            </li>
+            <li>
+                <p>Host live session with Stutern learners</p>
+                <button id="edit-button">Edit</button>
+                <button id="delete-button">Delete</button>
+            </li>
 
-        <ul>
-            <li><input type="checkbox"><label>I will wake up by 6 in the morning</label><input type="text">
-            <button>Edit</button><button>Remove</button></li>
-
-            <li><input type="checkbox"><label>I will read for 2hrs</label><input type="text">
-                <button>Edit</button><button>Remove</button></li>
-
-                <li><input type="checkbox"><label>I will have my bath after that</label><input type="text">
-                    <button>Edit</button><button>Remove</button></li>
-
-                    <li><input type="checkbox"><label>I will then have breakfast</label><input type="text">
-                        <button>Edit</button><button>Remove</button></li>
-
-                        <li><input type="checkbox"><label>I will practice JavaScript for 3hrs</label><input type="text">
-                            <button>Edit</button><button>Remove</button></li>
-
-                            <li><input type="checkbox"><label>Then take a nap</label><input type="text">
-                                <button>Edit</button><button>Remove</button></li>
+            <li>
+                <p>Host live session with Stutern learners</p>
+                <button id="edit-button">Edit</button>
+                <button id="delete-button">Delete</button>
+            </li>
         </ul>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
